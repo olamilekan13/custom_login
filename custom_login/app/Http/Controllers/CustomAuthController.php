@@ -58,7 +58,7 @@ class CustomAuthController extends Controller
     
     public function dashboard()
     {
-        if (Auth::user()->usertype == '1')
+        if (Auth::user()->usertype == 1)
         {
             return view('dashboard');
         }
